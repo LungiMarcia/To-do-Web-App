@@ -8,15 +8,29 @@
   </head>
   <body>
     <div class="container">
-      <h1>To-Do App</h1>
-      <input type="text" id="taskInput" placeholder="Enter new task..." />
-      <button onclick="addTask()">Add Task</button>
+      <header>
+        <h1>To-Do App</h1>
+        <input type="text" id="taskInput" placeholder="Enter new task..." />
+        <button onclick="addTask()">Add Task</button>
+      </header>
+      <main>
+        <h2>Pending Tasks</h2>
+        <ul class="task-list" id="pendingTasks"></ul>
 
-      <h2>Pending Tasks</h2>
-      <ul class="task-list" id="pendingTasks"></ul>
+        <h2>Completed Tasks</h2>
+        <ul class="task-list" id="completedTasks"></ul>
+      </main>
 
-      <h2>Completed Tasks</h2>
-      <ul class="task-list" id="completedTasks"></ul>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/LungiMarcia" target="blank"
+            >Lungile Simelane</a
+          >
+          and hosted on Netlify
+        </p>
+      </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
